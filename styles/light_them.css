@@ -1,0 +1,30 @@
+button {
+    background-color: white;
+    color: hsl(240, 30%, 70%);
+}
+body {
+    background-color:hsl(240, 30%, 96%);
+}
+
+button:hover{
+    background-color: ghostwhite;
+}
+
+button:active{
+    background-color: hsl(240, 100%, 95%);
+}
+
+input {
+    border: none;
+    background-color: white;
+    color: hsl(240, 30%, 70%);
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.icon {
+    fill: hsl(240, 30%, 70%);
+}

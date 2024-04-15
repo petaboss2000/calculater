@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base_style.css"/>
+    <link rel="stylesheet" id="ThemLlink" href="styles/dark_them.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <input id="inputCalculate" value=""/>
+    <div class="buttons_row">
+        <button onclick="ChangeThem()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>
+        </button>
+        <button onclick="EreseText()">   
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" height="50" viewBox="0 -960 960 960" width="50"><path d="M360-200q-20 0-37.5-9T294-234L120-480l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H360Zm400-80v-400 400Zm-400 0h400v-400H360L218-480l142 200Zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Z"/></svg>
+        </button>
+        <button onclick="EreseAllText()">C</button>
+        <button class="NumberButtons">/</button>
+    </div>
+    <div class="buttons_row">
+        <button class="NumberButtons">7</button>
+        <button class="NumberButtons">8</button>
+        <button class="NumberButtons">9</button>
+        <button class="NumberButtons">*</button>
+    </div>
+    <div class="buttons_row">
+        <button class="NumberButtons">4</button>
+        <button class="NumberButtons">5</button>
+        <button class="NumberButtons">6</button>
+        <button class="NumberButtons">-</button>
+    </div>
+    <div class="buttons_row">
+        <button class="NumberButtons">1</button>
+        <button class="NumberButtons">2</button>
+        <button class="NumberButtons">3</button>
+        <button class="NumberButtons">+</button>
+    </div>
+    <div class="buttons_row">
+        <button class="NumberButtons"></button>
+        <button class="NumberButtons">0</button>
+        <button class="NumberButtons">.</button>
+        <button onclick="Calculyte()">=</button>
+    </div>
+    
+    <script src="scripts\change_them.js"></script>
+    <script src="scripts\calculateScript.js"></script>
+</body>
+</html>

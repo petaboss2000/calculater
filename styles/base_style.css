@@ -1,0 +1,27 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+
+}
+
+button {
+    width: 40pt;
+    height: 40pt;
+    border: none;
+    margin: 1pt;
+    border-radius: 5pt;
+    font-size: 30pt;
+    
+}
+
+input {
+    width: 165pt;
+    height: 40pt;
+    margin: 1pt;
+    font-size: 30pt;
+    text-align: right;
+}
+
+.buttons_row {
+    display:flex;
+}
