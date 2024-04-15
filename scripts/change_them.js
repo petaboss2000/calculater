@@ -1,8 +1,8 @@
-function ChangeThem() {
-    const Them = document.querySelector('#ThemLlink')
-    if (Them.getAttribute("href") == "styles/dark_them.css"){
-        Them.href = "styles/light_them.css"
+function changeThem() {
+    const them = document.querySelector('#ThemLlink')
+    if (them.getAttribute("href") == "styles/dark_them.css"){
+        them.href = "styles/light_them.css"
     } else {
-        Them.href = "styles/dark_them.css"
+        them.href = "styles/dark_them.css"
     }
 }

@@ -2,18 +2,16 @@ const inputCalculate = document.querySelector('#inputCalculate')
 
 window.addEventListener('load', function () {
     let buttons = document.getElementsByClassName("NumberButtons");
-    add_listener_to_button(buttons)
+    addListenerToButton(buttons)
 })
 
-function add_listener_to_button(buttons, app_path){
+function addListenerToButton(buttons, app_path){
     for(let i = 0; i < buttons.length; i++){
         buttons[i].addEventListener("click", function (){
             inputButton(buttons[i].innerHTML)
         })
     }
 }
-
-
 
 function inputButton(text) {
     if ((inputCalculate.value == 0 && text != "." && inputCalculate.value[1] != ".")) {
@@ -23,14 +21,14 @@ function inputButton(text) {
     }
 }
 
-function EreseText() {
+function ereseText() {
     inputCalculate.value = inputCalculate.value.slice(0, -1); 
 }
 
-function EreseAllText() {
+function ereseAllText() {
     inputCalculate.value = inputCalculate.value.slice(0, -inputCalculate.length); 
 }
 
-function Calculyte() {
+function calculyte() {
     inputCalculate.value = eval(inputCalculate.value)
 }
