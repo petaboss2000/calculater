@@ -29,6 +29,6 @@ function ereseAllText() {
     inputCalculate.value = inputCalculate.value.slice(0, -inputCalculate.length); 
 }
 
-function calculyte() {
+function calculate() {
     inputCalculate.value = eval(inputCalculate.value)
 }
